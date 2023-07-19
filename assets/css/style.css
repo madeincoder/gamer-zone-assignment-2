@@ -105,7 +105,7 @@ nav.nav-menu {
 /* hero section css style */
 
 .hero-section{
-    background-image: url("/assets/images/Group 14.png");
+    background-image: url("./assets/images/Group 14.png");
     background-repeat: no-repeat;
     background-position: top/right;
     background-size: contain;
