@@ -157,6 +157,9 @@ nav.nav-menu {
     font-weight: 800;
     text-transform: uppercase;
 }
+ul.hero-item-list {
+    margin: 24px 0 40px 0;
+}
 .hero-item-list .item{
     display: flex;
     align-items: center;
@@ -219,6 +222,41 @@ p.video-title {
     font-weight: 500;
     line-height: 30px;
     margin-top: 24px;
+}
+/* play section css style */
+.play-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+.play-section-content {
+    max-width: 400px;
+    margin-left: 170px;
+}
+.play-section-content p{
+    text-align: right;
+}
+.play-section-content h2{
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.play-section-content .section-title span{
+    background: linear-gradient(180deg, #F948B2 0%, #b92f82 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-section-image{
+    position: relative;
+    margin-bottom: 170px;
+}
+.player-image-mini {
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
 }
 /* category section css style */
 .categories-section{
@@ -323,17 +361,76 @@ p.video-title {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
 }
 
+@media screen and (max-width: 1400px){
+    .play-section-content {
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .play-section-content {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .play-section {
+        flex-direction: column;
+        
+    }
+    .play-section-content h2 {
+        text-align: center;
+    }
+    .play-section-content p {
+        text-align: center;
+    }
+
+    .player-image-big{
+        text-align: center;
+    }
+    .player-image-big img{
+        width:80%;
+    }
+    .player-image-mini{
+        left: 0;
+    }
+    .player-image-mini img{
+        width:80%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .hero-section{
+        background: none;
+    }
+    .hero-content-section{
+        flex-direction: column-reverse;
+        gap: 80px;
+        padding-bottom: 25px;
+    }
+}
 @media screen and (max-width: 768px){
     .container.header-wrapper{
         flex-direction: column;
         padding: 40px 0;
+    }
+    .goat-section h1 {
+        font-size: 80px;
     }
 }
 @media screen and (max-width: 575px){
     nav.nav-menu {
         flex-direction: column;
         margin-top: 30px;
+    }
+    
+    .footer-content-wrapper{
+        padding: 80px 20px;
+    }
+    .section-content{
+        padding: 0 20px;
+    }
+    .btn{
+        padding: 15px 30px;
     }
 }
